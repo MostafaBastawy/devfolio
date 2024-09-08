@@ -1,17 +1,17 @@
 * {
     box-sizing: border-box;
-
 }
 
 body {
     margin: 0;
     scroll-behavior: smooth;
-
 }
 
 /* Start NavBar */
 .nav-bar {
     padding: 0 70px;
+    height: 70px;
+    color: #4e4e4e;
 }
 
 .nav-bar .links ul li a {
@@ -77,4 +77,37 @@ body {
         display: block;
     }
 }
+
 /* End NavBar */
+
+/* Start Home */
+.home {
+    height: 100vh;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.home .intro h3 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.home .intro p {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    .home .intro h3 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .home .intro p {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}
+/* End Home */
