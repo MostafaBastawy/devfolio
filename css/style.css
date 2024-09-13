@@ -316,7 +316,7 @@ body {
 .statistics {
     width: 100%;
     height: 30rem;
-    background-image: url(../images/counters-bg.jpg);
+    background-image: linear-gradient(#0077ff85, #0077ff81), url(../images/counters-bg.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -327,8 +327,7 @@ body {
 .statistics .overlay {
     width: 100%;
     height: 100%;
-    background-color: #0078ff;
-    opacity: 0.7;
+
 }
 
 .statistics .overlay .statistics-content {
@@ -496,14 +495,12 @@ body {
 .carousel {
     width: 100%;
     height: 500px;
-    background-image: url(../images/overlay-bg.jpg);
+    background-image: linear-gradient(#0077ff85, #0077ff81), url(../images/overlay-bg.jpg);
     background-attachment: fixed;
     position: relative;
 }
 
 .carousel .overlay {
-    background-color: #0078ff;
-    opacity: 0.7;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -618,18 +615,19 @@ body {
 
 .blogs .blogs-content .blog .blog-content .info p {
     margin: 0;
-    
+
 }
 
 .blogs .blogs-content .blog .blog-content .info p:first-of-type {
-    padding-left: 1rem;flex: 1;
+    padding-left: 1rem;
+    flex: 1;
 }
 
 .blogs .blogs-content .blog .blog-content .info p:last-of-type {
     padding-left: 0.4rem;
 }
 
-.blogs .blogs-content .blog .blog-content .details{
+.blogs .blogs-content .blog .blog-content .details {
     position: relative;
 }
 
@@ -637,10 +635,10 @@ body {
     background-color: #0078ff;
     border-radius: 5px;
     position: absolute;
-     top: -10%;
-     padding: 10px 20px;
-     left: 50%;
-     transform: translate(-50%, -10%);
+    top: -10%;
+    padding: 10px 20px;
+    left: 50%;
+    transform: translate(-50%, -10%);
 }
 
 .blogs .blogs-content .blog .blog-content .blog-type p {
@@ -663,4 +661,96 @@ body {
         flex-basis: 100%;
     }
 }
+
 /* End Blog */
+
+/* Start Contant */
+.contact {
+    padding: 6rem 3rem 4rem 3rem;
+    background-image: linear-gradient(#0077ff85, #0077ff81), url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact .contact-content {
+    border: solid 1px #0078ff;
+    padding: 50px 40px;
+}
+
+.contact .contact-content .line {
+    width: 15%;
+    height: 3px;
+    background-color: #0078ff;
+}
+
+.contact .contact-content .contact-info {
+    width: 50%;
+}
+
+.contact .contact-content .send-message {
+    width: 50%;
+}
+
+.contact .contact-content .send-message form {
+    padding: 30px 0;
+}
+
+.contact .contact-content .send-message form input {
+    border: #DEE2E6 1px solid;
+    padding: 10px;
+}
+
+.contact .contact-content .send-message form input:focus {
+    border-color: lightblue;
+    box-shadow: 0 0 10px #0078ff;
+    outline: none;
+}
+
+.contact .contact-content .send-message form textarea {
+    height: 10rem;
+    border: #DEE2E6 1px solid;
+    padding-top: 10px;
+}
+
+.contact .contact-content .send-message form textarea:focus {
+    border-color: lightblue;
+    box-shadow: 0 0 10px #0078ff;
+    outline: none;
+}
+
+.contact .contact-content .send-message .button{
+    margin-bottom: 30px;
+}
+.contact .contact-content .send-message .send-message-btn {
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.6s;
+    left: 50%;
+}
+
+.contact .contact-content .send-message .send-message-btn:hover {
+    background-color: #3393FF;
+    box-shadow: 0 0 10px #0078ff;
+}
+
+@media (max-width: 768px) {
+    .contact .contact-content {
+        flex-direction: column;
+        padding: 50px 10px;
+    }
+
+    .contact .contact-content .send-message {
+        width: 100%;
+    }
+
+    .contact .contact-content .contact-info {
+        width: 100%;
+    }
+}
+
+/* End Contant */
