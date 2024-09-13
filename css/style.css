@@ -646,7 +646,7 @@ body {
     color: #ffffff;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .blogs {
         padding: 4rem 0rem;
     }
@@ -718,9 +718,10 @@ body {
     outline: none;
 }
 
-.contact .contact-content .send-message .button{
+.contact .contact-content .send-message .button {
     margin-bottom: 30px;
 }
+
 .contact .contact-content .send-message .send-message-btn {
     background-color: #0078ff;
     color: white;
@@ -733,10 +734,50 @@ body {
     left: 50%;
 }
 
+
 .contact .contact-content .send-message .send-message-btn:hover {
     background-color: #3393FF;
     box-shadow: 0 0 10px #0078ff;
 }
+
+.contact .contact-content .contact-info p {
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.8;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.contact .contact-content .contact-info .contact-details i {
+    color: #0078ff;
+    padding-right: 10px;
+}
+
+.contact .contact-content .contact-info .contact-details:nth-of-type(3) {
+    padding: 10px 0;
+}
+
+.contact .contact-content .contact-info .contact-details .media {
+    margin-top: 40px;
+}
+
+.contact .contact-content .contact-info .media .media-item {
+    border-radius: 100px;
+    border: 3px solid #0078ff;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: relative;
+}
+
+.contact .contact-content .contact-info .media .media-item i {
+    position: absolute;
+    transition: 0.6s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 @media (max-width: 768px) {
     .contact .contact-content {
